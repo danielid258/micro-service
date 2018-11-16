@@ -1,0 +1,4 @@
+rootProject.name = 'micro-service'
+include('registry')
+include('config')
+include('gateway')

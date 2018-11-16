@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+#== uses dev environment config on git server begin ==#
+      profile: dev #activates configuration in the XXX-dev.yml
+      server:
+        git:
+          uri: https://github.com/danielid258/config-repo
+          username: danielid258
+          password: Daniel@100304
+          basedir: E:\configRepository\git # fetch config from git and save to config-server local path
+#== uses dev environment config on git server end ==#
+
+
+#== uses native config begin ==#
+
+#        native:
+#          search-locations: classpath:/shared
+#  profiles:
+#    active: native
+
+#== uses native config end ==#
