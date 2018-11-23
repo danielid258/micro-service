@@ -7,3 +7,4 @@ spring:
       fail-fast: true
       password: 111
       username: user
+      profile: dev  #activates configuration in the registry-dev.yml

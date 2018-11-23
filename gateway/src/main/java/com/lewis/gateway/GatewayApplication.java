@@ -6,6 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @EnableDiscoveryClient
+//gateway(@EnableZuulProxy,from zuul) find all service witch annotates @EnableFeignClients(from openFeign)
 @EnableZuulProxy
 @SpringBootApplication
 public class GatewayApplication {

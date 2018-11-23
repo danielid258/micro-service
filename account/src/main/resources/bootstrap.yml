@@ -1,11 +1,10 @@
 spring:
   application:
-    name: gateway
+    name: account
   cloud:
     config:
       uri: http://127.0.0.1:8888
       fail-fast: true
       password: 111
       username: user
-      label: master
-      profile: dev #activates configuration in the gateway-dev.yml of master branch
+      profile: dev #activates configuration in the account-dev.yml
