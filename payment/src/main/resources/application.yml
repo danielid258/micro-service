@@ -1,0 +1,4 @@
+server:
+  port: 8062
+  servlet:
+    context-path: /payment

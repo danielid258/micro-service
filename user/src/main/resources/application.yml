@@ -1,0 +1,4 @@
+server:
+  port: 8063
+  servlet:
+    context-path: /user
